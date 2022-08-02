@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.clock{
+    width: 200px;
+    height: 200px;
+    background: lightgrey;
+    border-radius: 50%;
+    position: relative;
+    margin:50px auto;
+}
+
+.circle{
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    background-color: lightgrey;
+    z-index:1;
+}
+
+.center{
+    width: 10px;
+    height: 10px;
+    background:black;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    z-index:2;
+}
+
+.twelve{
+    position: absolute;
+    width:2px;
+    height: 100%;
+    background-color: red;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.three{
+    position: absolute;
+    width:100%;
+    height: 2px;
+    background-color: red;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+
+.one{
+    width: 2px;
+    height: 100%;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(30deg);    
+}
+
+.two{
+    width: 2px;
+    height: 100%;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(60deg);    
+}
+
+.four{
+    width: 2px;
+    height: 100%;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(120deg);    
+}
+
+.five{
+    width: 2px;
+    height: 100%;
+    background-color: yellowgreen;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%) rotate(150deg);    
+}
+
+.sec{
+    width: 2px;
+    height: 50%;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    transform-origin:bottom;
+    z-index: 3;
+
+}
+
+.min{
+    width: 5px;
+    height: 70px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    transform: translate(-50%);
+    z-index: 5;
+    transform-origin: bottom;
+}
+
+.hour{
+    width: 5px;
+    height: 50px;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translate(-50%);
+    z-index: 4;
+    transform-origin: bottom;
+}
